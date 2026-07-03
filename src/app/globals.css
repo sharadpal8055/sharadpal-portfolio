@@ -1,4 +1,349 @@
+/* ============================================================
+   IMPORTS
+   Tailwind CSS + Shadcn UI + Animation Utilities
+============================================================ */
+
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
+/* ============================================================
+   ROOT THEME VARIABLES
+   Global Design Tokens (Colors, Radius, Typography)
+============================================================ */
+
+:root {
+  --background: #050505;
+  --surface: #0b0b0b;
+  --surface-light: #111111;
+
+  --foreground: #ffffff;
+  --muted: #a1a1aa;
+
+  --primary: #ff6b00;
+  --secondary: #ff8c42;
+
+  --border: #242424;
+
+  --radius: 1.5rem;
+}
+
+/* ============================================================
+   GLOBAL HTML & BODY STYLES
+============================================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+
+  min-height: 100vh;
+
+  overflow-x: hidden;
+
+  text-rendering: optimizeLegibility;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  border-color: var(--border);
+}
+
+/* ============================================================
+   TEXT SELECTION
+============================================================ */
+
+::selection {
+  background: var(--primary);
+  color: white;
+}
+
+/* ============================================================
+   CUSTOM SCROLLBAR
+============================================================ */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090909;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    #ff6b00,
+    #ff8c42
+  );
+
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff8c42;
+}
+
+/* ============================================================
+   LAYOUT UTILITIES
+============================================================ */
+
+.container-width {
+  width: min(1400px, 92%);
+  margin-inline: auto;
+}
+
+.section-padding {
+  padding-block: 120px;
+}
+
+/* ============================================================
+   GRADIENT UTILITIES
+============================================================ */
+
+.orange-gradient {
+  background: linear-gradient(
+    90deg,
+    #ff6b00,
+    #ff944d
+  );
+}
+
+.text-gradient {
+  background: linear-gradient(
+    90deg,
+    #ffffff,
+    #ff8c42
+  );
+
+  -webkit-background-clip: text;
+
+  color: transparent;
+}
+
+/* ============================================================
+   GLASSMORPHISM EFFECT
+============================================================ */
+
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+
+  backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+}
+
+/* ============================================================
+   GLOW EFFECTS
+============================================================ */
+
+.orange-glow {
+  box-shadow: 0 0 120px rgba(255, 107, 0, 0.25);
+}
+
+/* ============================================================
+   CARD COMPONENT
+============================================================ */
+
+.card {
+  background: #0b0b0b;
+
+  border: 1px solid #222;
+
+  border-radius: 24px;
+
+  transition: 0.35s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+
+  border-color: #ff6b00;
+}
+
+/* ============================================================
+   GRID BACKGROUND
+============================================================ */
+
+.grid-bg {
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px
+    );
+
+  background-size: 50px 50px;
+}
+
+/* ============================================================
+   NOISE TEXTURE OVERLAY
+============================================================ */
+
+.noise {
+  position: absolute;
+
+  inset: 0;
+
+  opacity: 0.04;
+
+  pointer-events: none;
+
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+}
+
+/* ============================================================
+   HERO GLOW BACKGROUND
+============================================================ */
+
+.hero-glow {
+  position: absolute;
+
+  width: 800px;
+
+  height: 800px;
+
+  border-radius: 50%;
+
+  filter: blur(150px);
+
+  background: rgba(255, 107, 0, 0.12);
+}
+
+/* ============================================================
+   FLOATING ANIMATION
+============================================================ */
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.float {
+  animation: floating 5s ease-in-out infinite;
+}
+
+/* ============================================================
+   FADE UP ANIMATION
+============================================================ */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: none;
+  }
+}
+
+.fade-up {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* ============================================================
+   ROTATING ANIMATION
+============================================================ */
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-slow {
+  animation: rotate 30s linear infinite;
+}
+
+/* ============================================================
+   TYPOGRAPHY UTILITIES
+============================================================ */
+
+.heading {
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: -2px;
+}
+
+.subheading {
+  color: #a1a1aa;
+
+  font-size: 18px;
+}
+
+.orange {
+  color: #ff6b00;
+}
+
+/* ============================================================
+   RESPONSIVE UTILITIES
+============================================================ */
+
+@media (max-width: 1024px) {
+  .section-padding {
+    padding-block: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding-block: 70px;
+  }
+
+  .heading {
+    letter-spacing: -1px;
+  }
+}
+/* smooth shadow */
+.nav-shadow {
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.35),
+    0 0 20px rgba(255, 107, 0, 0.12);
+}
+
+/* ============================================================
+   SCROLL PROGRESS BAR
+============================================================ */
+
+@keyframes progressGlow {
+  0% {
+    filter: brightness(1);
+  }
+
+  50% {
+    filter: brightness(1.25);
+  }
+
+  100% {
+    filter: brightness(1);
+  }
+}
+
+.progress-glow {
+  animation: progressGlow 2s ease-in-out infinite;
+}
