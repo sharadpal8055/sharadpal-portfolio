@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 import ProjectsHeader from "./ProjectsHeader";
 import ProjectStats from "./ProjectStats";
-import FeaturedProjects from "./FeaturedProjects";
+import FeaturedProjects from "./FeaturedProject";
 import ProjectsGrid from "./ProjectsGrid";
 import ProjectsCTA from "./ProjectsCTA";
 

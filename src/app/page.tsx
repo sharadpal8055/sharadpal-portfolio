@@ -4,6 +4,9 @@ import { Hero } from "@/components/hero";
 import Navbar from "@/components/navbar/Navbar";
 import { Skills } from "@/components/skills";
 import { Projects } from "@/components/projects";
+import { Achievements } from "@/components/achievements";
+import { Contact } from "@/components/contact";
+import  Footer  from "@/components/footer/Footer";
 export default function HomePage() {
   return (
     <>
@@ -14,22 +17,15 @@ export default function HomePage() {
 
         <About />
 
-      
-      <Skills />
-      <Experience/>
+        <Skills />
+        <Experience />
 
-       
+        <Projects />
 
-       <Projects />
-
-        <section id="achievements" className="container-width min-h-screen">
-          Achievements
-        </section>
-
-        <section id="contact" className="container-width min-h-screen">
-          Contact
-        </section>
+        <Achievements />
+        <Contact />
       </main>
+      <Footer />
     </>
   );
 }

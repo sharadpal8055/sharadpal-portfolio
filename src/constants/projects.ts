@@ -2,33 +2,27 @@ import {
   BrainCircuit,
   CalendarCheck,
   Code2,
-  Cpu,
-  Database,
   Globe,
   Layers,
   Lock,
-  ShoppingBag,
   Sparkles,
-  Zap,
 } from "lucide-react";
 
 import {
   SiFirebase,
   SiMongodb,
-  SiNextdotjs,
   SiNodedotjs,
-  SiOpenai,
   SiReact,
   SiTailwindcss,
-  SiTypescript,
   SiVercel,
+  SiExpress,
+  SiJavascript,
 } from "react-icons/si";
 
 
 /* -------------------------------------------------------------------------- */
 /*                            Section Information                             */
 /* -------------------------------------------------------------------------- */
-
 
 export const projectsSection = {
   badge: "Featured Work",
@@ -77,63 +71,50 @@ export const projectStats = [
 ];
 
 
+
 /* -------------------------------------------------------------------------- */
-/*                              Featured Projects                             */
+/*                                  Projects                                  */
 /* -------------------------------------------------------------------------- */
 
 
-export const featuredProjects = [
+export const projects = [
   {
     id: 1,
 
     title: "Clutch AI",
 
-    category:
-      "AI Productivity Platform",
+    category: "AI Productivity Platform",
 
-    image:
-      "/projects/clutch-ai.png",
+    featured: true,
+
+    status: "Production Ready",
+
+    image: "/projects/clutch-ai.png",
 
     description:
-      "An intelligent productivity assistant that analyzes tasks, predicts deadline risks, creates AI-generated execution plans, and helps users manage workloads efficiently.",
+      "An AI productivity companion that analyzes tasks, predicts deadline risks, generates execution plans, and helps users improve productivity.",
 
 
     highlights: [
       "Gemini AI integration",
-      "AI task analysis engine",
-      "Risk prediction system",
-      "Smart planning workflow",
+      "Risk prediction engine",
+      "AI generated planning",
+      "Firebase authentication",
     ],
 
 
     technologies: [
-      {
-        name: "React",
-        icon: SiReact,
-      },
-
-      {
-        name: "Firebase",
-        icon: SiFirebase,
-      },
-
-      {
-        name: "Gemini",
-        icon: Sparkles,
-      },
-
-      {
-        name: "Tailwind",
-        icon: SiTailwindcss,
-      },
+      "React",
+      "Firebase",
+      "Gemini API",
+      "Tailwind CSS",
     ],
 
 
     github:
       "https://github.com/sharadpal8055",
 
-    live:
-      "#",
+    live:"#",
   },
 
 
@@ -142,114 +123,199 @@ export const featuredProjects = [
 
     title: "Zenthrixa",
 
-    category:
-      "Scalable E-Commerce Platform",
+    category:"Full Stack E-Commerce",
 
-    image:
-      "/projects/zenthrixa.png",
+    featured:true,
+
+    status:"Live",
+
+    image:"/projects/zenthrixa.png",
 
     description:
-      "A complete MERN commerce ecosystem featuring customer storefront, admin dashboard, authentication, payments, order management, and secure backend APIs.",
+      "A scalable MERN e-commerce platform with storefront, admin dashboard, authentication, payments, orders and secure APIs.",
 
 
-    highlights: [
-      "Admin management system",
-      "Secure authentication",
+    highlights:[
+
+      "Admin dashboard",
+
+      "JWT authentication",
+
       "Payment workflow",
-      "Order lifecycle tracking",
+
+      "Order management",
+
     ],
 
 
-    technologies: [
-      {
-        name: "MongoDB",
-        icon: SiMongodb,
-      },
+    technologies:[
 
-      {
-        name: "Node.js",
-        icon: SiNodedotjs,
-      },
+      "MongoDB",
 
-      {
-        name: "React",
-        icon: SiReact,
-      },
+      "Express",
 
-      {
-        name: "Vercel",
-        icon: SiVercel,
-      },
+      "React",
+
+      "Node.js",
+
+      "Vercel",
+
     ],
 
 
     github:
       "https://github.com/sharadpal8055/Zenthrixa",
 
+
     live:
       "https://zenthrixa-frontend.vercel.app/",
-  },
-];
-
-
-
-/* -------------------------------------------------------------------------- */
-/*                               Other Projects                               */
-/* -------------------------------------------------------------------------- */
-
-
-export const projects = [
-  {
-    id:1,
-
-    title:"AI Resume Analyzer",
-
-    description:
-      "AI-based resume evaluation platform that analyzes resumes, provides insights, and recommends improvements.",
-
-    icon: BrainCircuit,
-
-    tags:[
-      "AI",
-      "NLP",
-      "Automation",
-    ],
-  },
-
-
-  {
-    id:2,
-
-    title:"StayBook",
-
-    description:
-      "A booking platform inspired by Airbnb with listings, authentication, and reservation workflows.",
-
-    icon: CalendarCheck,
-
-    tags:[
-      "Full Stack",
-      "Authentication",
-      "Database",
-    ],
   },
 
 
   {
     id:3,
 
-    title:"Secure Systems",
+    title:"AI Resume Analyzer",
+
+    category:"AI Application",
+
+    featured:false,
+
+    status:"Completed",
+
+    image:"/projects/resume-ai.png",
 
     description:
-      "Backend-focused projects implementing authentication, authorization, API security, and scalable architecture.",
+      "AI powered resume analysis platform that evaluates resumes, generates insights and recommends improvements.",
 
-    icon: Lock,
 
-    tags:[
-      "Backend",
-      "JWT",
-      "APIs",
+    highlights:[
+
+      "Resume parsing",
+
+      "AI suggestions",
+
+      "Score generation",
+
     ],
+
+
+    technologies:[
+
+      "React",
+
+      "Node.js",
+
+      "AI API",
+
+    ],
+
+
+    github:
+      "https://github.com/sharadpal8055",
+
+
+    live:"#",
+  },
+
+
+  {
+    id:4,
+
+    title:"StayBook",
+
+    category:"Booking Platform",
+
+    featured:false,
+
+    status:"Completed",
+
+    image:"/projects/staybook.png",
+
+
+    description:
+      "A full stack booking application inspired by Airbnb featuring listings, authentication and reservation workflows.",
+
+
+    highlights:[
+
+      "User authentication",
+
+      "Booking system",
+
+      "Database models",
+
+    ],
+
+
+    technologies:[
+
+      "MongoDB",
+
+      "Express",
+
+      "React",
+
+      "Node.js",
+
+    ],
+
+
+    github:
+      "https://github.com/sharadpal8055",
+
+
+    live:"#",
+  },
+
+
+  {
+    id:5,
+
+    title:"Secure Backend Systems",
+
+    category:"Backend Engineering",
+
+    featured:false,
+
+    status:"Completed",
+
+    image:"/projects/backend.png",
+
+
+    description:
+      "Backend focused projects implementing secure authentication, authorization, REST APIs and scalable architecture.",
+
+
+    highlights:[
+
+      "JWT security",
+
+      "REST API design",
+
+      "Database optimization",
+
+    ],
+
+
+    technologies:[
+
+      "Node.js",
+
+      "Express",
+
+      "MongoDB",
+
+      "JWT",
+
+    ],
+
+
+    github:
+      "https://github.com/sharadpal8055",
+
+
+    live:"#",
   },
 ];
 
@@ -265,11 +331,14 @@ export const projectsCTA = {
   title:
     "More Products Are Always Under Development",
 
+
   description:
     "I continuously build projects to explore engineering challenges, improve architecture decisions, and transform ideas into useful software.",
 
+
   primary:
     "View GitHub",
+
 
   secondary:
     "Contact Me",
