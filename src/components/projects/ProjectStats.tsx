@@ -3,7 +3,11 @@
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
 
-import { skillsStats } from "@/constants/skills";
+import { projectStats } from "@/constants/projects";
+
+/* -------------------------------------------------------------------------- */
+/*                              Motion Variants                               */
+/* -------------------------------------------------------------------------- */
 
 const containerVariants = {
   hidden: {},
@@ -11,15 +15,16 @@ const containerVariants = {
   show: {
     transition: {
       staggerChildren: 0.12,
-      delayChildren: 0.2,
+      delayChildren: 0.15,
     },
   },
 };
 
-const itemVariants = {
+
+const cardVariants = {
   hidden: {
     opacity: 0,
-    y: 30,
+    y: 40,
   },
 
   show: {
@@ -28,47 +33,81 @@ const itemVariants = {
 
     transition: {
       duration: 0.6,
+      ease: "easeOut",
     },
   },
 };
 
-export default function SkillsStats() {
+
+/* -------------------------------------------------------------------------- */
+/*                              Project Stats                                 */
+/* -------------------------------------------------------------------------- */
+
+
+export default function ProjectStats() {
   return (
     <motion.div
+
       variants={containerVariants}
+
       initial="hidden"
+
       whileInView="show"
+
       viewport={{
         once: true,
         amount: 0.2,
       }}
+
       className="
-        mt-20
+        mt-24
 
         grid
 
-        grid-cols-2
-
         gap-6
 
-        lg:grid-cols-4
+        sm:grid-cols-2
+
+        xl:grid-cols-4
       "
     >
-      {skillsStats.map((stat) => {
+
+      {projectStats.map((stat) => {
+
         const Icon = stat.icon;
 
+
+        const number = Number(
+          String(stat.value).replace(/[^0-9]/g, "")
+        );
+
+
+        const suffix =
+          String(stat.value).replace(/[0-9]/g, "");
+
+
+
         return (
+
           <motion.div
+
             key={stat.id}
-            variants={itemVariants}
+
+            variants={cardVariants}
+
+
             whileHover={{
-              y: -8,
+              y: -10,
               scale: 1.03,
             }}
+
+
             transition={{
               type: "spring",
               stiffness: 260,
             }}
+
+
             className="
               group
 
@@ -78,15 +117,13 @@ export default function SkillsStats() {
 
               overflow-hidden
 
-              rounded-3xl
+              rounded-[32px]
 
               border
 
               border-white/10
 
               p-8
-
-              text-center
 
               transition-all
 
@@ -99,29 +136,32 @@ export default function SkillsStats() {
               hover:shadow-orange-500/10
             "
           >
-            {/* Background Glow */}
+
+
+            {/* Glow */}
+
 
             <div
               className="
                 absolute
 
-                -top-16
+                -right-20
 
-                -right-16
+                -top-20
 
-                h-44
+                h-48
 
-                w-44
+                w-48
 
                 rounded-full
 
                 bg-orange-500/10
 
-                blur-3xl
-
                 opacity-0
 
-                transition-opacity
+                blur-[100px]
+
+                transition-all
 
                 duration-500
 
@@ -129,11 +169,16 @@ export default function SkillsStats() {
               "
             />
 
+
+
             {/* Icon */}
+
 
             <div
               className="
-                mx-auto
+                relative
+
+                mb-7
 
                 flex
 
@@ -150,38 +195,56 @@ export default function SkillsStats() {
                 bg-orange-500/10
 
                 text-orange-500
+
+                transition-all
+
+                duration-300
+
+                group-hover:scale-110
+
+                group-hover:rotate-6
               "
             >
+
               <Icon size={30} />
+
             </div>
 
-            {/* Counter */}
+
+
+            {/* Number */}
+
 
             <h3
               className="
                 heading
 
-                mt-6
-
                 text-5xl
-
-                font-bold
               "
             >
+
               <CountUp
-                end={stat.value}
-                duration={2.2}
+
+                end={number}
+
+                duration={2}
+
                 enableScrollSpy
+
               />
 
-              {stat.suffix}
+              {suffix}
+
             </h3>
+
+
 
             {/* Label */}
 
+
             <p
               className="
-                mt-3
+                mt-4
 
                 text-sm
 
@@ -190,11 +253,43 @@ export default function SkillsStats() {
                 text-zinc-400
               "
             >
+
               {stat.label}
+
             </p>
+
+
+
+            {/* Accent Line */}
+
+
+            <div
+              className="
+                mt-8
+
+                h-[2px]
+
+                w-full
+
+                rounded-full
+
+                bg-gradient-to-r
+
+                from-orange-500/70
+
+                via-orange-300/30
+
+                to-transparent
+              "
+            />
+
+
           </motion.div>
+
         );
+
       })}
+
     </motion.div>
   );
 }
