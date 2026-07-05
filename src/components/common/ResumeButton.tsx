@@ -11,6 +11,7 @@ interface ResumeButtonProps {
   mobile?: boolean;
   className?: string;
   onClick?: () => void;
+    compact?: boolean;
 }
 
 export default function ResumeButton({
@@ -18,6 +19,7 @@ export default function ResumeButton({
   mobile = false,
   className,
   onClick,
+  compact = false,
 }: ResumeButtonProps) {
   return (
     <motion.div

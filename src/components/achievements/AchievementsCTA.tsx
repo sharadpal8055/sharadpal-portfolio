@@ -1,8 +1,10 @@
 "use client";
 
 import Link from "next/link";
-
-import { motion } from "framer-motion";
+import {
+  motion,
+  type Variants,
+} from "framer-motion";
 
 import { ArrowRight, Sparkles } from "lucide-react";
 
@@ -17,7 +19,7 @@ import {
 /* -------------------------------------------------------------------------- */
 
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: {
     opacity: 0,
     y: 50,
@@ -29,7 +31,8 @@ const itemVariants = {
 
     transition: {
       duration: 0.7,
-      ease: [0.16, 1, 0.3, 1],
+
+      
     },
   },
 };

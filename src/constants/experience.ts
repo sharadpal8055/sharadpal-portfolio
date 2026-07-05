@@ -53,7 +53,7 @@ export const experienceStats = [
   {
     id: 4,
     value: "101",
-    label: "Global Rank",
+    label: "Global Ai-Thon contest Rank",
     icon: Award,
   },
 ];

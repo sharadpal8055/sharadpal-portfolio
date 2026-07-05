@@ -244,7 +244,7 @@ export const skillCategories = [
 
     icon: BrainCircuit,
     experience: "Intermediate",
-    projects: "5+",
+    projects: "3+",
 
     technologies: [
       {
@@ -278,7 +278,7 @@ export const skillCategories = [
 
     icon: Braces,
     experience: "Advanced",
-    projects: "300+ DSA",
+    projects: "200+ DSA",
 
     technologies: [
       {

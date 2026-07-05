@@ -64,7 +64,7 @@ export const achievementStats = [
 
     value: "101",
 
-    label: "Global Coding Rank",
+    label: "Global Ai-Thon Contest  Rank",
 
     icon: Award,
   },
