@@ -3,21 +3,12 @@ import { siteConfig } from "@/constants/seo";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import { Analytics } from "@vercel/analytics/next";
-import {
-  Inter
-} from "next/font/google";
-
+import { Inter } from "next/font/google";
 
 const inter = Inter({
+  subsets: ["latin"],
 
-  subsets:[
-    "latin"
-  ],
-
-
-  display:
-    "swap",
-
+  display: "swap",
 });
 import "./globals.css";
 
@@ -30,8 +21,6 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
-
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -112,7 +101,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${geistSans.variable} ${geistMono.variable} {inter.className} h-full antialiased`}
+     className={`${geistSans.variable} ${geistMono.variable} ${inter.className} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
         {children}
