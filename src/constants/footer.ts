@@ -114,7 +114,7 @@ export const footerSocials = [
     name:"LinkedIn",
 
     href:
-      "https://linkedin.com/in/your-linkedin",
+      "https://www.linkedin.com/in/sharadpal8055",
 
     icon:FaLinkedin,
 

@@ -52,7 +52,7 @@ export default function Achievements() {
 
       <motion.div
         variants={containerVariants}
-        initial="hidden"
+        initial="show"
         whileInView="show"
         viewport={{
           once: true,

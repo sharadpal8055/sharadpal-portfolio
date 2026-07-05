@@ -10,6 +10,7 @@ import {
   Star,
   Trophy,
   Users,
+    GitBranch,
 } from "lucide-react";
 
 
@@ -39,7 +40,7 @@ export const achievementStats = [
   {
     id: 1,
 
-    value: "300+",
+    value: "200+",
 
     label: "DSA Problems Solved",
 
@@ -52,9 +53,9 @@ export const achievementStats = [
 
     value: "Top 3%",
 
-    label: "Academic Performance",
+    label: "Academic Rank",
 
-    icon: GraduationCap,
+    icon: Trophy,
   },
 
 
@@ -63,9 +64,9 @@ export const achievementStats = [
 
     value: "101",
 
-    label: "Global Rank",
+    label: "Global Coding Rank",
 
-    icon: Trophy,
+    icon: Award,
   },
 
 
@@ -74,7 +75,7 @@ export const achievementStats = [
 
     value: "5+",
 
-    label: "Hackathons & Events",
+    label: "Hackathons & Competitions",
 
     icon: Rocket,
   },
@@ -91,177 +92,134 @@ export const achievements = [
   {
     id: 1,
 
+    title: "ET AI Hackathon Semi-Finalist",
 
-    title:
-      "ET AI Hackathon Semi-Finalist",
+    category: "National Hackathon",
 
+    year: "2026",
 
-    category:
-      "Hackathon",
-
-
-    year:
-      "2026",
-
-
-    icon:
-      Trophy,
-
+    icon: Trophy,
 
     description:
-      "Recognized among competitive participants by designing innovative AI-powered solutions focused on solving real-world problems.",
-
+      "Selected as a Semi-Finalist in the ET-AI Hackathon 2026 organized by The Economic Times by developing innovative AI-powered solutions.",
 
     highlights: [
-      "AI product development",
-
-      "Rapid prototyping",
-
-      "Problem-solving under deadlines",
+      "National level AI competition",
+      "AI product innovation",
+      "Team-based problem solving",
     ],
   },
-
 
 
   {
     id: 2,
 
+    title: "Vibe2Ship Hackathon Top 10 Finalist",
 
-    title:
-      "Open Source Contributor",
+    category: "AI Hackathon",
 
+    year: "2026",
 
-    category:
-      "Community",
-
-
-    year:
-      "2026",
-
-
-    icon:
-      Users,
-
+    icon: Rocket,
 
     description:
-      "Contributed to collaborative development environments while improving engineering workflows and software practices.",
-
+      "Secured a Top 10 position in the Vibe2Ship Hackathon by building Clutch AI, an AI-powered productivity companion for intelligent task planning and deadline management.",
 
     highlights: [
-      "Git collaboration",
-
-      "Community development",
-
-      "Code contribution",
+      "Built Clutch AI platform",
+      "Top 10 finalist",
+      "AI agent development",
     ],
   },
-
 
 
   {
     id: 3,
 
+    title: "AI-Thon Global Coding Conquest",
 
-    title:
-      "Top Academic Performer",
+    category: "Coding Competition",
 
+    year: "2026",
 
-    category:
-      "Education",
-
-
-    year:
-      "Ongoing",
-
-
-    icon:
-      GraduationCap,
-
+    icon: Award,
 
     description:
-      "Maintained strong academic performance while balancing software development, projects, and technical learning.",
-
+      "Achieved Global Rank 101 in AI-Thon Global Coding Conquest organized by Enginow and Unstop, competing with developers across programming challenges.",
 
     highlights: [
-      "Top 3% of batch",
-
-      "Strong CS fundamentals",
-
-      "Consistent performance",
+      "Global Rank 101",
+      "Competitive programming",
+      "Algorithmic problem solving",
     ],
   },
-
 
 
   {
     id: 4,
 
+    title: "Open Source Connect Global Contributor",
 
-    title:
-      "Full Stack Development Journey",
+    category: "Open Source",
 
+    year: "2026",
 
-    category:
-      "Engineering",
-
-
-    year:
-      "2025 - Present",
-
-
-    icon:
-      Rocket,
-
+    icon: Users,
 
     description:
-      "Built multiple production-oriented applications involving frontend, backend, databases, authentication, and deployment workflows.",
-
+      "Selected as a contributor in Open Source Connect Global 2026, contributing to collaborative software development and open-source projects.",
 
     highlights: [
-      "15+ applications",
-
-      "Production deployments",
-
-      "End-to-end ownership",
+      "Open source contribution",
+      "Git collaboration workflow",
+      "Community development",
     ],
   },
-
 
 
   {
     id: 5,
 
+    title: "TechSprint Manipur 1.0 AI Hackathon",
 
-    title:
-      "AI Engineering Exploration",
+    category: "Hackathon",
 
+    year: "2026",
 
-    category:
-      "Artificial Intelligence",
-
-
-    year:
-      "2026",
-
-
-    icon:
-      BrainCircuit,
-
+    icon: BrainCircuit,
 
     description:
-      "Explored practical AI integrations by building intelligent applications using modern AI tools and APIs.",
-
+      "Participated in TechSprint Manipur AI Hackathon and gained practical experience in AI-based problem solving, prototyping, and collaborative development.",
 
     highlights: [
-      "AI applications",
+      "AI solution building",
+      "Rapid prototyping",
+      "Team collaboration",
+    ],
+  },
 
-      "LLM integrations",
 
-      "Automation systems",
+  {
+    id: 6,
+
+    title: "Academic Excellence",
+
+    category: "Education",
+
+    year: "2024 - Present",
+
+    icon: GraduationCap,
+
+    description:
+      "Ranked among the Top 3% of the B.Tech Computer Science Engineering batch at IIIT Senapati, Manipur based on academic performance.",
+
+    highlights: [
+      "Top 3% of CSE batch",
+      "Strong CS fundamentals",
+      "Consistent academic performance",
     ],
   },
 ];
-
 
 
 /* -------------------------------------------------------------------------- */
@@ -274,13 +232,31 @@ export const certifications = [
     id: 1,
 
     title:
-      "Data Structures & Algorithms",
+      "Open Source Connect Global 2026",
 
     provider:
-      "Programming Fundamentals",
+      "Open Source Connect Global",
+
+    category:
+      "Open Source Contribution",
+
+    year:
+      "2026",
 
     icon:
-      Code2,
+      GitBranch,
+
+    description:
+      "Recognized as a contributor during Open Source Connect Global 2026 for active participation and valuable contributions to collaborative open-source development.",
+
+    highlights: [
+      "Open Source Contributor",
+      "Community Collaboration",
+      "Software Development",
+    ],
+
+    credential:
+      "https://www.linkedin.com/posts/sharadpal8055_oscg-participation-certificate-ugcPost-7450096143151104000-pvo7/",
   },
 
 
@@ -288,13 +264,31 @@ export const certifications = [
     id: 2,
 
     title:
-      "Full Stack Development",
+      "Competitive Programming Workshop",
 
     provider:
-      "MERN Stack",
+      "GeeksforGeeks",
+
+    category:
+      "Programming Fundamentals",
+
+    year:
+      "2026",
 
     icon:
-      BadgeCheck,
+      Code2,
+
+    description:
+      "Successfully completed a technical workshop focused on competitive programming, algorithmic problem solving, and programming fundamentals.",
+
+    highlights: [
+      "Data Structures",
+      "Algorithms",
+      "Problem Solving",
+    ],
+
+    credential:
+      "https://media.geeksforgeeks.org/certificates/1745645335/c4f0d4177c65d91ee252b653289f16c9.pdf",
   },
 
 
@@ -302,13 +296,31 @@ export const certifications = [
     id: 3,
 
     title:
-      "React Development",
+      "Zero to AI Tester: End-to-End Automation",
 
     provider:
-      "Frontend Engineering",
+      "GeeksforGeeks x TestMu AI",
+
+    category:
+      "Artificial Intelligence",
+
+    year:
+      "2026",
 
     icon:
-      Sparkles,
+      BrainCircuit,
+
+    description:
+      "Completed an AI automation workshop covering AI-assisted testing workflows, intelligent automation concepts, and modern AI tools.",
+
+    highlights: [
+      "AI Testing",
+      "Automation",
+      "AI Tools",
+    ],
+
+    credential:
+      "https://drive.google.com/file/d/1NlYLAE00cdqYfvcecKeljHVUo7wqo58i/view?usp=sharing",
   },
 
 
@@ -316,13 +328,63 @@ export const certifications = [
     id: 4,
 
     title:
-      "Artificial Intelligence",
+      "All India NCAT 2026",
 
     provider:
-      "AI Engineering",
+      "Naukri Campus",
+
+    category:
+      "National Assessment",
+
+    year:
+      "2026",
 
     icon:
-      BrainCircuit,
+      Trophy,
+
+    description:
+      "Participated in All India NCAT 2026 assessment and achieved strong percentile performance among engineering candidates nationwide.",
+
+    highlights: [
+      "95+ Percentile",
+      "Logical Reasoning",
+      "Problem Solving",
+    ],
+
+    credential:
+      "https://drive.google.com/file/d/1uESSGxlS8X1G6nwWhH1SHyDQqPjNMfAI/view?usp=sharing",
+  },
+
+
+  {
+    id: 5,
+
+    title:
+      "AI Hackathon Participation",
+
+    provider:
+      "The Economic Times",
+
+    category:
+      "Artificial Intelligence",
+
+    year:
+      "2026",
+
+    icon:
+      Sparkles,
+
+    description:
+      "Participated in ET AI Hackathon 2026 and advanced as a Semi-Finalist by developing innovative AI-based solutions.",
+
+    highlights: [
+      "Semi Finalist",
+      "AI Innovation",
+      "Product Development",
+    ],
+
+    credential:
+      "https://drive.google.com/file/d/1Jerq1T7Bne3BTZE4bWpiwm0AtjgGEBie/view",
   },
 ];
 

@@ -1,6 +1,5 @@
 import {
   BriefcaseBusiness,
- 
   Mail,
   MapPin,
   MessageCircle,
@@ -11,28 +10,22 @@ import {
 } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
-
 /* -------------------------------------------------------------------------- */
 /*                              Section Content                               */
 /* -------------------------------------------------------------------------- */
 
-
 export const contactSection = {
   badge: "Get In Touch",
 
-  heading:
-    "Let's Build Something Valuable Together",
+  heading: "Let's Build Something Valuable Together",
 
   description:
     "I'm always open to discussing software engineering opportunities, internships, collaborations, and innovative ideas. Feel free to reach out and start a conversation.",
 };
 
-
-
 /* -------------------------------------------------------------------------- */
 /*                               Contact Info                                 */
 /* -------------------------------------------------------------------------- */
-
 
 export const contactInfo = [
   {
@@ -40,13 +33,12 @@ export const contactInfo = [
 
     title: "Email",
 
-    value: "your-email@gmail.com",
+    value: "sharadpal409@gmail.com",
 
-    href: "mailto:your-email@gmail.com",
+    href: "mailto:sharadpal409@gmail.com",
 
     icon: Mail,
   },
-
 
   {
     id: 2,
@@ -55,12 +47,10 @@ export const contactInfo = [
 
     value: "Connect Professionally",
 
-    href:
-      "https://linkedin.com/in/your-profile",
+    href: "https://www.linkedin.com/in/sharadpal8055",
 
     icon: FaLinkedin,
   },
-
 
   {
     id: 3,
@@ -69,12 +59,10 @@ export const contactInfo = [
 
     value: "Explore My Code",
 
-    href:
-      "https://github.com/sharadpal8055",
+    href: "https://github.com/sharadpal8055",
 
     icon: FaGithub,
   },
-
 
   {
     id: 4,
@@ -83,211 +71,149 @@ export const contactInfo = [
 
     value: "India",
 
-    href: "#",
+    href: "https://www.mappls.com/122vxt",
 
     icon: MapPin,
   },
 ];
 
-
-
 /* -------------------------------------------------------------------------- */
 /*                               Availability                                 */
 /* -------------------------------------------------------------------------- */
-
 
 export const availability = [
   {
     id: 1,
 
-    title:
-      "Software Engineering Internships",
+    title: "Software Engineering Internships",
 
-    icon:
-      BriefcaseBusiness,
+    icon: BriefcaseBusiness,
   },
-
 
   {
     id: 2,
 
-    title:
-      "Full Stack Development",
+    title: "Full Stack Development",
 
-    icon:
-      Rocket,
+    icon: Rocket,
   },
-
 
   {
     id: 3,
 
-    title:
-      "AI Powered Projects",
+    title: "AI Powered Projects",
 
-    icon:
-      Sparkles,
+    icon: Sparkles,
   },
-
 
   {
     id: 4,
 
-    title:
-      "Technical Collaboration",
+    title: "Technical Collaboration",
 
-    icon:
-      UserRound,
+    icon: UserRound,
   },
 ];
-
-
 
 /* -------------------------------------------------------------------------- */
 /*                               Social Links                                 */
 /* -------------------------------------------------------------------------- */
 
-
 export const contactSocials = [
   {
     id: 1,
 
-    name:
-      "GitHub",
+    name: "GitHub",
 
-    href:
-      "https://github.com/sharadpal8055",
+    href: "https://github.com/sharadpal8055",
 
-    icon:
-      FaGithub,
+    icon: FaGithub,
   },
-
 
   {
     id: 2,
 
-    name:
-      "LinkedIn",
+    name: "LinkedIn",
 
-    href:
-      "https://linkedin.com/in/your-profile",
+    href: "https://www.linkedin.com/in/sharadpal8055",
 
-    icon:
-      FaLinkedin,
+    icon: FaLinkedin,
   },
-
 
   {
     id: 3,
 
-    name:
-      "Email",
+    name: "Email",
 
-    href:
-      "mailto:your-email@gmail.com",
+    href: "mailto:sharadpal409@gmail.com",
 
-    icon:
-      Mail,
+    icon: Mail,
   },
 ];
-
-
 
 /* -------------------------------------------------------------------------- */
 /*                                Form Fields                                 */
 /* -------------------------------------------------------------------------- */
-
 
 export const contactForm = {
   fields: [
     {
       id: "name",
 
-      label:
-        "Your Name",
+      label: "Your Name",
 
-      placeholder:
-        "Enter your name",
+      placeholder: "Enter your name",
 
-      type:
-        "text",
+      type: "text",
     },
 
-
     {
-      id:
-        "email",
+      id: "email",
 
-      label:
-        "Email Address",
+      label: "Email Address",
 
-      placeholder:
-        "Enter your email",
+      placeholder: "Enter your email",
 
-      type:
-        "email",
+      type: "email",
     },
 
-
     {
-      id:
-        "subject",
+      id: "subject",
 
-      label:
-        "Subject",
+      label: "Subject",
 
-      placeholder:
-        "Project / Opportunity",
+      placeholder: "Project / Opportunity",
 
-      type:
-        "text",
+      type: "text",
     },
   ],
 
-
   message: {
-    id:
-      "message",
+    id: "message",
 
-    label:
-      "Message",
+    label: "Message",
 
-    placeholder:
-      "Tell me about your idea or opportunity...",
+    placeholder: "Tell me about your idea or opportunity...",
   },
 
+  button: "Send Message",
 
-  button:
-    "Send Message",
-
-  icon:
-    Send,
+  icon: Send,
 };
-
-
 
 /* -------------------------------------------------------------------------- */
 /*                                   CTA                                      */
 /* -------------------------------------------------------------------------- */
 
-
 export const contactCTA = {
-  status:
-    "Currently Available",
+  status: "Currently Available",
 
-
-  title:
-    "Open To Software Engineering Opportunities",
-
+  title: "Open To Software Engineering Opportunities",
 
   description:
     "Looking forward to joining teams where I can contribute to impactful products, solve challenging problems, and continue growing as an engineer.",
 
+  primary: "Download Resume",
 
-  primary:
-    "Download Resume",
-
-
-  secondary:
-    "Start Conversation",
+  secondary: "Start Conversation",
 };

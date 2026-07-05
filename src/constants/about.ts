@@ -1,16 +1,20 @@
 import {
   Brain,
   BrainCircuit,
-  BriefcaseBusiness,
   Code2,
   Cpu,
+  Database,
   GitBranch,
-  GraduationCap,
+  Layers,
   Lightbulb,
+  Network,
   Rocket,
+  ServerCog,
   ShieldCheck,
   Users,
   Zap,
+  GraduationCap,
+  BriefcaseBusiness,
 } from "lucide-react";
 
 /* -------------------------------------------------------------------------- */
@@ -35,8 +39,7 @@ export const aboutData = {
     "Currently seeking Software Engineering, Full Stack Development, and AI internships where I can collaborate with experienced engineers, contribute to impactful products, and continue growing as a developer.",
 
   education: {
-    college:
-      "Indian Institute of Information Technology Senapati, Manipur",
+    college: "Indian Institute of Information Technology Senapati, Manipur",
 
     degree: "Bachelor of Technology",
 
@@ -44,7 +47,7 @@ export const aboutData = {
 
     cgpa: "8.67 / 10",
 
-    duration: "2024 – 2028",
+    duration: "2024 – Present",
   },
 
   resume: "/resume.pdf",
@@ -158,63 +161,80 @@ export const aboutHighlights = {
   technical: [
     {
       title: "Problem Solving",
-
       icon: Brain,
     },
 
     {
       title: "Full Stack Development",
-
       icon: Code2,
     },
 
     {
       title: "Artificial Intelligence",
-
       icon: BrainCircuit,
     },
 
     {
       title: "Open Source",
-
       icon: GitBranch,
     },
 
     {
       title: "System Design",
-
       icon: Cpu,
     },
 
     {
       title: "Fast Learner",
-
       icon: Zap,
+    },
+  ],
+
+  coreCS: [
+    {
+      title: "Data Structures & Algorithms",
+      icon: Layers,
+    },
+
+    {
+      title: "Database Management Systems",
+      icon: Database,
+    },
+
+    {
+      title: "Operating Systems",
+      icon: ServerCog,
+    },
+
+    {
+      title: "Object Oriented Programming",
+      icon: Code2,
+    },
+
+    {
+      title: "Computer Networks",
+      icon: Network,
     },
   ],
 
   professional: [
     {
       title: "Leadership",
-
       icon: Rocket,
     },
 
     {
       title: "Communication",
-
       icon: Users,
     },
 
     {
       title: "Critical Thinking",
-
       icon: Lightbulb,
     },
 
     {
       title: "Adaptability",
-
       icon: ShieldCheck,
     },
   ],

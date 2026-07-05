@@ -38,9 +38,9 @@ export default function Experience() {
 
       <div className="noise" />
 
-      <div className="absolute -left-40 top-24 h-[450px] w-[450px] rounded-full bg-orange-500/10 blur-[140px]" />
+      <div className="absolute top-24 -left-40 h-[450px] w-[450px] rounded-full bg-orange-500/10 blur-[140px]" />
 
-      <div className="absolute bottom-0 right-0 h-[420px] w-[420px] rounded-full bg-orange-400/10 blur-[140px]" />
+      <div className="absolute right-0 bottom-0 h-[420px] w-[420px] rounded-full bg-orange-400/10 blur-[140px]" />
 
       {/* ------------------------------------------------------------------ */}
       {/* Content */}
@@ -48,7 +48,7 @@ export default function Experience() {
 
       <motion.div
         variants={containerVariants}
-        initial="hidden"
+        initial="show"
         whileInView="show"
         viewport={{
           once: true,

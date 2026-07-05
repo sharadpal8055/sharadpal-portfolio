@@ -47,7 +47,7 @@ import {
   SiVercel,
   SiZod,
 } from "react-icons/si";
-import { SiC,  } from "react-icons/si";
+import { SiC } from "react-icons/si";
 /* -------------------------------------------------------------------------- */
 /*                              Section Content                               */
 /* -------------------------------------------------------------------------- */
@@ -92,7 +92,7 @@ export const skillsStats = [
 
   {
     id: 4,
-    value: 300,
+    value: 200,
     suffix: "+",
     label: "DSA Problems",
     icon: BrainCircuit,
@@ -102,7 +102,6 @@ export const skillsStats = [
 /* -------------------------------------------------------------------------- */
 /*                              Skill Categories                              */
 /* -------------------------------------------------------------------------- */
-
 
 export const skillCategories = [
   {
@@ -195,11 +194,11 @@ export const skillCategories = [
         icon: SiSocketdotio,
         color: "text-white",
       },
-      // {
-      //   name: "Zod",
-      //   icon: SiZod,
-      //   color: "text-cyan-400",
-      // },
+      {
+        name: "Zod",
+        icon: SiZod,
+        color: "text-cyan-400",
+      },
     ],
   },
 
@@ -282,11 +281,11 @@ export const skillCategories = [
     projects: "300+ DSA",
 
     technologies: [
-       {
-      name: "C",
-      icon: SiC, // or TbLetterC
-      color: "text-blue-400",
-    },
+      {
+        name: "C",
+        icon: SiC, // or TbLetterC
+        color: "text-blue-400",
+      },
       {
         name: "C++",
         icon: SiCplusplus,
@@ -351,11 +350,11 @@ export const skillCategories = [
         icon: SiPostman,
         color: "text-orange-500",
       },
-      {
-        name: "Linux",
-        icon: SiLinux,
-        color: "text-yellow-400",
-      },
+      // {
+      //   name: "Linux",
+      //   icon: SiLinux,
+      //   color: "text-yellow-400",
+      // },
       {
         name: "Vercel",
         icon: SiVercel,

@@ -30,35 +30,7 @@ export default function SkillsCTA() {
         once: true,
         amount: 0.3,
       }}
-      className="
-        relative
-
-        mt-28
-
-        overflow-hidden
-
-        rounded-[36px]
-
-        border
-
-        border-orange-500/20
-
-        bg-gradient-to-br
-
-        from-orange-500/10
-
-        via-[#111111]
-
-        to-[#080808]
-
-        px-8
-
-        py-14
-
-        text-center
-
-        md:px-14
-      "
+      className="relative mt-28 overflow-hidden rounded-[36px] border border-orange-500/20 bg-gradient-to-br from-orange-500/10 via-[#111111] to-[#080808] px-8 py-14 text-center md:px-14"
     >
       {/* Glow */}
 
@@ -106,36 +78,10 @@ export default function SkillsCTA() {
         >
           <Link
             href="#projects"
-            className="
-              inline-flex
-
-              items-center
-
-              gap-3
-
-              rounded-full
-
-              bg-orange-500
-
-              px-8
-
-              py-4
-
-              font-semibold
-
-              text-white
-
-              transition-all
-
-              duration-300
-
-              hover:bg-orange-600
-            "
+            className="inline-flex items-center gap-3 rounded-full bg-orange-500 px-8 py-4 font-semibold text-white transition-all duration-300 hover:bg-orange-600"
           >
             <FolderGit2 size={20} />
-
             View My Projects
-
             <ArrowRight size={18} />
           </Link>
         </motion.div>
@@ -150,37 +96,9 @@ export default function SkillsCTA() {
         >
           <Link
             href="#contact"
-            className="
-              glass
-
-              inline-flex
-
-              items-center
-
-              gap-3
-
-              rounded-full
-
-              border
-
-              border-white/10
-
-              px-8
-
-              py-4
-
-              font-semibold
-
-              transition-all
-
-              duration-300
-
-              hover:border-orange-500
-
-              hover:text-orange-400
-            "
+            className="glass inline-flex items-center gap-3 rounded-full border border-white/10 px-8 py-4 font-semibold transition-all duration-300 hover:border-orange-500 hover:text-orange-400"
           >
-            Let's Connect
+            Let&apos;s Connect
           </Link>
         </motion.div>
       </div>
@@ -200,37 +118,10 @@ export default function SkillsCTA() {
           "LLMs",
           "REST APIs",
           "Git",
-          "Docker",
         ].map((tech) => (
           <span
             key={tech}
-            className="
-              rounded-full
-
-              border
-
-              border-white/10
-
-              bg-white/5
-
-              px-4
-
-              py-2
-
-              text-sm
-
-              text-zinc-300
-
-              transition-all
-
-              duration-300
-
-              hover:border-orange-500/40
-
-              hover:bg-orange-500/10
-
-              hover:text-orange-300
-            "
+            className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-zinc-300 transition-all duration-300 hover:border-orange-500/40 hover:bg-orange-500/10 hover:text-orange-300"
           >
             {tech}
           </span>

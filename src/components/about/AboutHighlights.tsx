@@ -209,6 +209,11 @@ export default function AboutHighlights() {
           description="Technologies and engineering skills I use to design, build and deploy scalable applications."
           items={aboutHighlights.technical}
         />
+        <CategoryCard
+          title="Core Fundamentals"
+          description="Solid understanding of essential CS principles including algorithms, databases, operating systems, networking, and software design fundamentals."
+          items={aboutHighlights.coreCS}
+        />
 
         <CategoryCard
           title="Professional Qualities"

@@ -19,7 +19,6 @@ import {
   SiJavascript,
 } from "react-icons/si";
 
-
 /* -------------------------------------------------------------------------- */
 /*                            Section Information                             */
 /* -------------------------------------------------------------------------- */
@@ -27,18 +26,15 @@ import {
 export const projectsSection = {
   badge: "Featured Work",
 
-  heading:
-    "Engineering Products That Solve Real Problems",
+  heading: "Engineering Products That Solve Real Problems",
 
   description:
     "A collection of full-stack applications and AI-powered platforms focused on scalability, clean architecture, performance, and practical user experiences.",
 };
 
-
 /* -------------------------------------------------------------------------- */
 /*                                  Stats                                     */
 /* -------------------------------------------------------------------------- */
-
 
 export const projectStats = [
   {
@@ -50,7 +46,7 @@ export const projectStats = [
 
   {
     id: 2,
-    value: "5+",
+    value: "10+",
     label: "Production Deployments",
     icon: Globe,
   },
@@ -70,12 +66,9 @@ export const projectStats = [
   },
 ];
 
-
-
 /* -------------------------------------------------------------------------- */
 /*                                  Projects                                  */
 /* -------------------------------------------------------------------------- */
-
 
 export const projects = [
   {
@@ -92,29 +85,29 @@ export const projects = [
     image: "/projects/clutch-ai.png",
 
     description:
-      "An AI productivity companion that analyzes tasks, predicts deadline risks, generates execution plans, and helps users improve productivity.",
-
+      "An AI-powered productivity companion that analyzes tasks, predicts deadline risks, creates intelligent execution plans, and helps users manage productivity using AI agents.",
 
     highlights: [
       "Gemini AI integration",
-      "Risk prediction engine",
-      "AI generated planning",
+      "AI task analysis workflow",
+      "Deadline risk prediction",
+      "Smart productivity planning",
       "Firebase authentication",
     ],
 
-
     technologies: [
       "React",
+      "Node.js",
       "Firebase",
       "Gemini API",
       "Tailwind CSS",
     ],
 
-
     github:
-      "https://github.com/sharadpal8055",
+      "https://github.com/sharadpal8055/clutchai",
 
-    live:"#",
+    live:
+      "https://clutchai-frontend.vercel.app",
   },
 
 
@@ -123,49 +116,35 @@ export const projects = [
 
     title: "Zenthrixa",
 
-    category:"Full Stack E-Commerce",
+    category: "Scalable MERN E-Commerce Platform",
 
-    featured:true,
+    featured: true,
 
-    status:"Live",
+    status: "In Development",
 
-    image:"/projects/zenthrixa.png",
+    image: "/projects/zenthrixa.png",
 
     description:
-      "A scalable MERN e-commerce platform with storefront, admin dashboard, authentication, payments, orders and secure APIs.",
+      "A scalable full-stack e-commerce platform with customer storefront, admin dashboard, authentication, product management, payments, and secure backend APIs.",
 
-
-    highlights:[
-
-      "Admin dashboard",
-
-      "JWT authentication",
-
-      "Payment workflow",
-
-      "Order management",
-
+    highlights: [
+      "Customer and admin dashboards",
+      "JWT authentication system",
+      "Product and order management",
+      "Payment integration workflow",
+      "Scalable REST API architecture",
     ],
 
-
-    technologies:[
-
+    technologies: [
       "MongoDB",
-
-      "Express",
-
+      "Express.js",
       "React",
-
       "Node.js",
-
-      "Vercel",
-
+      "JWT",
     ],
-
 
     github:
       "https://github.com/sharadpal8055/Zenthrixa",
-
 
     live:
       "https://zenthrixa-frontend.vercel.app/",
@@ -173,173 +152,215 @@ export const projects = [
 
 
   {
-    id:3,
+    id: 3,
 
-    title:"AI Resume Analyzer",
+    title: "E-Learning Platform",
 
-    category:"AI Application",
+    category: "Full Stack Learning Management System",
 
-    featured:false,
+    featured: true,
 
-    status:"Completed",
+    status: "Production Ready",
 
-    image:"/projects/resume-ai.png",
+    image: "/projects/elearning.png",
 
     description:
-      "AI powered resume analysis platform that evaluates resumes, generates insights and recommends improvements.",
+      "A scalable MERN learning platform featuring secure authentication, role-based authorization, course enrollment workflows, payments, and progress tracking.",
 
-
-    highlights:[
-
-      "Resume parsing",
-
-      "AI suggestions",
-
-      "Score generation",
-
+    highlights: [
+      "Role-based access control",
+      "Course enrollment system",
+      "Lesson progress tracking",
+      "Stripe payment integration",
+      "MVC backend architecture",
     ],
 
-
-    technologies:[
-
+    technologies: [
       "React",
-
       "Node.js",
-
-      "AI API",
-
-    ],
-
-
-    github:
-      "https://github.com/sharadpal8055",
-
-
-    live:"#",
-  },
-
-
-  {
-    id:4,
-
-    title:"StayBook",
-
-    category:"Booking Platform",
-
-    featured:false,
-
-    status:"Completed",
-
-    image:"/projects/staybook.png",
-
-
-    description:
-      "A full stack booking application inspired by Airbnb featuring listings, authentication and reservation workflows.",
-
-
-    highlights:[
-
-      "User authentication",
-
-      "Booking system",
-
-      "Database models",
-
-    ],
-
-
-    technologies:[
-
-      "MongoDB",
-
-      "Express",
-
-      "React",
-
-      "Node.js",
-
-    ],
-
-
-    github:
-      "https://github.com/sharadpal8055",
-
-
-    live:"#",
-  },
-
-
-  {
-    id:5,
-
-    title:"Secure Backend Systems",
-
-    category:"Backend Engineering",
-
-    featured:false,
-
-    status:"Completed",
-
-    image:"/projects/backend.png",
-
-
-    description:
-      "Backend focused projects implementing secure authentication, authorization, REST APIs and scalable architecture.",
-
-
-    highlights:[
-
-      "JWT security",
-
-      "REST API design",
-
-      "Database optimization",
-
-    ],
-
-
-    technologies:[
-
-      "Node.js",
-
-      "Express",
-
-      "MongoDB",
-
+      "Express.js",
+      "MongoDB Atlas",
+      "Stripe",
       "JWT",
-
+      "Zod",
     ],
 
+    github:
+      "https://github.com/sharadpal8055/ElearningFrontend",
+
+    live:
+      "https://elearningfrontend-alpha.vercel.app",
+  },
+
+
+  {
+    id: 4,
+
+    title: "CodeNova",
+
+    category: "Adaptive Object Recognition System",
+
+    featured: true,
+
+    status: "Hackathon Project",
+
+    image: "/projects/codenova.png",
+
+    description:
+      "An AI-powered adaptive object recognition system capable of learning new objects dynamically without retraining traditional machine learning models.",
+
+    highlights: [
+      "YOLOv8 real-time detection",
+      "DINOv2 semantic embeddings",
+      "Quantum hybrid similarity engine",
+      "Dynamic object learning pipeline",
+      "Voice notification system",
+    ],
+
+    technologies: [
+      "Python",
+      "YOLOv8",
+      "DINOv2",
+      "OpenCV",
+      "Streamlit",
+      "PennyLane",
+    ],
 
     github:
-      "https://github.com/sharadpal8055",
+      "https://github.com/sharadpal8055/hello",
+
+    live:
+      "#",
+  },
 
 
-    live:"#",
+  {
+    id: 5,
+
+    title: "TaskManager",
+
+    category: "Full Stack Productivity Application",
+
+    featured: false,
+
+    status: "Completed",
+
+    image: "/projects/taskmanager.png",
+
+    description:
+      "A production-ready task management platform with authentication, CRUD workflows, filtering, priority management, and responsive dashboards.",
+
+    highlights: [
+      "JWT authentication",
+      "CRUD task workflows",
+      "Priority management",
+      "Search and filtering",
+      "Drag-and-drop interface",
+    ],
+
+    technologies: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Vercel",
+      "Render",
+    ],
+
+    github:
+      "https://github.com/sharadpal8055/Task-Manager-MERN-App",
+
+    live:
+      "https://taskmanagerfrontend-seven.vercel.app/signup",
+  },
+
+
+  {
+    id: 6,
+
+    title: "FloraVision",
+
+    category: "Modern Frontend Application",
+
+    featured: false,
+
+    status: "Live",
+
+    image: "/projects/floravision.png",
+
+    description:
+      "A modern plant store frontend application built with reusable components, responsive layouts, animations, and optimized UI performance.",
+
+    highlights: [
+      "Reusable React components",
+      "Responsive UI system",
+      "Modern animations",
+      "Optimized frontend performance",
+    ],
+
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "Vite",
+      "Vercel",
+    ],
+
+    github:
+      "https://github.com/sharadpal8055/flora",
+
+    live:
+      "https://flora-gold.vercel.app/",
+  },
+
+
+  {
+    id: 7,
+
+    title: "SafeSphere",
+
+    category: "AI Disaster Risk Prediction Platform",
+
+    featured: false,
+
+    status: "AI/ML Project",
+
+    image: "/projects/safesphere.png",
+
+    description:
+      "An AI-driven disaster risk prediction system using environmental datasets, machine learning workflows, and intelligent analysis pipelines.",
+
+    highlights: [
+      "Disaster risk classification",
+      "Predictive ML models",
+      "Data preprocessing",
+      "Feature analysis",
+      "Risk estimation workflow",
+    ],
+
+    technologies: [
+      "Python",
+      "Machine Learning",
+      "Data Analysis",
+      "Streamlit",
+    ],
+
+    github:
+      "https://github.com/sharadpal8055/Safesphere",
+
+    live:
+      "#",
   },
 ];
 
 
 
-/* -------------------------------------------------------------------------- */
-/*                                   CTA                                      */
-/* -------------------------------------------------------------------------- */
-
-
 export const projectsCTA = {
-
-  title:
-    "More Products Are Always Under Development",
-
+  title: "More Products Are Always Under Development",
 
   description:
     "I continuously build projects to explore engineering challenges, improve architecture decisions, and transform ideas into useful software.",
 
+  primary: "View GitHub",
 
-  primary:
-    "View GitHub",
-
-
-  secondary:
-    "Contact Me",
+  secondary: "Contact Me",
 };

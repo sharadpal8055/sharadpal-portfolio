@@ -13,71 +13,54 @@ import ResumeButton from "@/components/common/ResumeButton";
 export default function Navbar() {
   const isScrolled = useScroll();
   const activeSection = useActiveSection();
-  const [mounted, setMounted] = useState(false);
-
-useEffect(() => {
-  setMounted(true);
-}, []);
-if (!mounted) return null;
+  
   return (
-<>
-<ScrollProgress/>
-    <motion.header
-      initial={{
-        opacity: 0,
-        y: -40,
-      }}
-      animate={{
-        opacity: 1,
-        y: 0,
-      }}
-      transition={{
-        duration: 0.6,
-      }}
-      className={`
-fixed
-inset-x-0
-top-0
-z-50
-transition-all
-duration-500
-${
-  isScrolled
-    ? "nav-shadow border-orange-500/20"
-    : ""
-}
-`}
-    >
-    <div className="container-width px-2 sm:px-4">
-        <nav
-          aria-label="Main Navigation"
-          className="glass flex items-center justify-between
-gap-4 rounded-full border border-white/10 px-6 py-3"
-        >
-          {/* ---------------- Logo ---------------- */}
+    <>
+      <ScrollProgress />
+      <motion.header
+        initial={{
+          opacity: 0,
+          y: -40,
+        }}
+        animate={{
+          opacity: 1,
+          y: 0,
+        }}
+        transition={{
+          duration: 0.6,
+        }}
+        className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
+          isScrolled ? "nav-shadow border-orange-500/20" : ""
+        } `}
+      >
+        <div className="container-width px-2 sm:px-4">
+          <nav
+            aria-label="Main Navigation"
+            className="glass flex items-center justify-between gap-4 rounded-full border border-white/10 px-6 py-3"
+          >
+            {/* ---------------- Logo ---------------- */}
 
-          <Logo />
+            <Logo />
 
-          {/* ------------ Desktop Navigation ------------ */}
+            {/* ------------ Desktop Navigation ------------ */}
 
-         <NavLinks activeSection={activeSection} />
+            <NavLinks activeSection={activeSection} />
 
-          {/* ------------ Right Side ------------ */}
+            {/* ------------ Right Side ------------ */}
 
-         <div className="flex items-center gap-3">
-  {/* Desktop Resume */}
-  <ResumeButton className="hidden xl:inline-flex" />
+            <div className="flex items-center gap-3">
+              {/* Desktop Resume */}
+              <ResumeButton className="hidden xl:inline-flex" />
 
-  {/* Tablet / Mobile Resume */}
-  <ResumeButton compact className="xl:hidden" />
+              {/* Tablet / Mobile Resume */}
+              <ResumeButton compact className="xl:hidden" />
 
-  {/* Mobile Menu */}
-  <MobileMenu />
-</div>
-        </nav>
-      </div>
-    </motion.header>
-
+              {/* Mobile Menu */}
+              <MobileMenu />
+            </div>
+          </nav>
+        </div>
+      </motion.header>
     </>
   );
 }

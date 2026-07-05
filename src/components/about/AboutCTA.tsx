@@ -87,13 +87,13 @@ export default function AboutCTA() {
       {/* Heading */}
 
       <h2 className="heading mt-8 max-w-4xl text-[clamp(2.2rem,5vw,4rem)]">
-        Let's Build the Next Great Product Together.
+        Let&apos;s Build the Next Great Product Together.
       </h2>
 
       {/* Description */}
 
       <p className="subheading mt-6 max-w-3xl leading-8">
-        I'm passionate about creating scalable software, intelligent
+        I&apos;m passionate about creating scalable software, intelligent
         applications, and meaningful user experiences. Whether it's a
         Software Engineering internship, Full Stack role, or AI-driven
         product, I'm always excited to collaborate on challenging problems.

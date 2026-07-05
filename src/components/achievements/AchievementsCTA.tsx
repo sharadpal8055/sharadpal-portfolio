@@ -4,12 +4,12 @@ import Link from "next/link";
 
 import { motion } from "framer-motion";
 
-import {
-  ArrowRight,
-  Sparkles,
-} from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 
-import { achievementsCTA } from "@/constants/achievements";
+import {
+  achievementsCTA,
+  achievementValues,
+} from "@/constants/achievements";
 
 
 /* -------------------------------------------------------------------------- */
@@ -29,7 +29,7 @@ const itemVariants = {
 
     transition: {
       duration: 0.7,
-      ease: "easeOut",
+      ease: [0.16, 1, 0.3, 1],
     },
   },
 };
@@ -51,14 +51,14 @@ export default function AchievementsCTA() {
       whileInView="show"
 
       viewport={{
-        once:true,
-        amount:0.2,
+        once: true,
+        amount: 0.2,
       }}
 
       className="
-        mt-32
-
         relative
+
+        mt-32
 
         overflow-hidden
 
@@ -86,7 +86,7 @@ export default function AchievementsCTA() {
 
 
       {/* -------------------------------------------------------------- */}
-      {/* Floating Glow */}
+      {/* Background Glows */}
       {/* -------------------------------------------------------------- */}
 
 
@@ -94,9 +94,9 @@ export default function AchievementsCTA() {
         className="
           absolute
 
-          -left-20
-
           -top-20
+
+          -left-20
 
           h-72
 
@@ -115,9 +115,9 @@ export default function AchievementsCTA() {
         className="
           absolute
 
-          -bottom-20
-
           -right-20
+
+          -bottom-20
 
           h-72
 
@@ -134,24 +134,31 @@ export default function AchievementsCTA() {
 
 
       {/* -------------------------------------------------------------- */}
-      {/* Badge */}
+      {/* Floating Icon */}
       {/* -------------------------------------------------------------- */}
 
 
       <motion.div
 
         animate={{
-          y:[
+
+          y: [
             0,
             -8,
             0,
           ],
+
         }}
 
+
         transition={{
-          duration:3,
-          repeat:Infinity,
+
+          duration: 3,
+
+          repeat: Infinity,
+
         }}
+
 
         className="
           relative
@@ -176,7 +183,8 @@ export default function AchievementsCTA() {
         "
       >
 
-        <Sparkles size={36}/>
+        <Sparkles size={36} />
+
 
       </motion.div>
 
@@ -184,7 +192,7 @@ export default function AchievementsCTA() {
 
 
       {/* -------------------------------------------------------------- */}
-      {/* Content */}
+      {/* Main Text */}
       {/* -------------------------------------------------------------- */}
 
 
@@ -205,6 +213,7 @@ export default function AchievementsCTA() {
       >
 
         {achievementsCTA.title}
+
 
       </h3>
 
@@ -228,7 +237,161 @@ export default function AchievementsCTA() {
 
         {achievementsCTA.description}
 
+
       </p>
+
+
+
+
+
+      {/* -------------------------------------------------------------- */}
+      {/* Achievement Values */}
+      {/* -------------------------------------------------------------- */}
+
+
+      <div
+        className="
+          relative
+
+          mx-auto
+
+          mt-12
+
+          grid
+
+          max-w-5xl
+
+          gap-5
+
+          sm:grid-cols-2
+
+          lg:grid-cols-4
+        "
+      >
+
+
+        {achievementValues.map((item) => {
+
+
+          const Icon = item.icon;
+
+
+          return (
+
+            <motion.div
+
+              key={item.title}
+
+
+              whileHover={{
+
+                y: -8,
+
+                scale: 1.05,
+
+              }}
+
+
+              transition={{
+
+                duration: 0.3,
+
+              }}
+
+
+              className="
+                group
+
+                rounded-[28px]
+
+                border
+
+                border-white/10
+
+                bg-white/[0.04]
+
+                p-6
+
+                backdrop-blur-xl
+
+                transition-all
+
+                duration-300
+
+                hover:border-orange-500/40
+
+                hover:bg-orange-500/10
+
+                hover:shadow-xl
+
+                hover:shadow-orange-500/10
+              "
+            >
+
+
+              <div
+                className="
+                  mx-auto
+
+                  flex
+
+                  h-14
+
+                  w-14
+
+                  items-center
+
+                  justify-center
+
+                  rounded-2xl
+
+                  bg-orange-500/10
+
+                  text-orange-500
+
+                  transition-all
+
+                  duration-300
+
+                  group-hover:scale-110
+
+                  group-hover:rotate-6
+                "
+              >
+
+                <Icon size={26} />
+
+
+              </div>
+
+
+
+              <h4
+                className="
+                  mt-5
+
+                  font-semibold
+
+                  text-zinc-200
+                "
+              >
+
+                {item.title}
+
+
+              </h4>
+
+
+            </motion.div>
+
+          );
+
+        })}
+
+
+      </div>
+
+
 
 
 
@@ -242,7 +405,7 @@ export default function AchievementsCTA() {
         className="
           relative
 
-          mt-10
+          mt-12
 
           flex
 
@@ -255,11 +418,14 @@ export default function AchievementsCTA() {
       >
 
 
+
         {/* Resume */}
 
 
         <Link
+
           href="/resume.pdf"
+
 
           className="
             group
@@ -287,13 +453,20 @@ export default function AchievementsCTA() {
             duration-300
 
             hover:scale-105
+
+            hover:shadow-xl
+
+            hover:shadow-orange-500/20
           "
         >
+
 
           {achievementsCTA.primary}
 
 
+
           <ArrowRight
+
             size={18}
 
             className="
@@ -309,11 +482,14 @@ export default function AchievementsCTA() {
 
 
 
+
         {/* Contact */}
 
 
         <Link
+
           href="#contact"
+
 
           className="
             rounded-full
@@ -344,7 +520,9 @@ export default function AchievementsCTA() {
           "
         >
 
+
           {achievementsCTA.secondary}
+
 
         </Link>
 

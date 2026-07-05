@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import HeroBackground from "./HeroBackground";
 import HeroContent from "./HeroContent";
 import HeroImage from "./HeroImage";
-import ScrollIndicator from "./ScrollIndicator";
 
 /* -------------------------------------------------------------------------- */
 /*                             Animation Variants                             */
@@ -80,7 +79,7 @@ export default function Hero() {
 
       <motion.div
         variants={containerVariants}
-        initial="hidden"
+        initial="show"
         animate="show"
         className="container-width relative z-20 grid grid-cols-1 items-center gap-16 py-12 lg:gap-20 lg:py-20 xl:grid-cols-[1.15fr_.85fr] xl:gap-24"
       >
@@ -99,12 +98,6 @@ export default function Hero() {
           <HeroImage />
         </motion.div>
       </motion.div>
-
-      {/* ------------------------------------------------------------------ */}
-      {/* Scroll Indicator */}
-      {/* ------------------------------------------------------------------ */}
-
-      {/* <ScrollIndicator /> */}
     </section>
   );
 }

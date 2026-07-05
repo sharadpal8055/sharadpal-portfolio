@@ -7,6 +7,9 @@ import { Projects } from "@/components/projects";
 import { Achievements } from "@/components/achievements";
 import { Contact } from "@/components/contact";
 import  Footer  from "@/components/footer/Footer";
+
+
+
 export default function HomePage() {
   return (
     <>

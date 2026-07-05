@@ -3,7 +3,7 @@ import {
   BriefcaseBusiness,
   Building2,
   Code2,
- GitBranch,
+  GitBranch,
   GraduationCap,
   Rocket,
   Sparkles,
@@ -39,13 +39,13 @@ export const experienceStats = [
   {
     id: 2,
     value: "15+",
-    label: "Projects Delivered",
+    label: "Projects Developed",
     icon: Rocket,
   },
 
   {
     id: 3,
-    value: "Top 3%",
+    value: " Top 3%",
     label: "Academic Rank",
     icon: Trophy,
   },
@@ -66,119 +66,148 @@ export const experienceTimeline = [
   {
     id: 1,
 
-    year: "2024",
+    year: "2024 - Present",
 
-    company: "IIIT Senapati",
+    company:
+      "Indian Institute of Information Technology Senapati, Manipur",
 
-    role: "Computer Science Undergraduate",
+    role:
+      "B.Tech Computer Science & Engineering Undergraduate",
 
-    type: "Education",
+    type:
+      "Education",
 
-    icon: GraduationCap,
+    icon:
+      GraduationCap,
 
     description:
-      "Started my Computer Science journey with a strong focus on programming fundamentals, algorithms, software engineering, and problem solving while consistently maintaining academic excellence.",
+      "Pursuing Computer Science Engineering with a focus on core computer science fundamentals, software engineering principles, and practical application development through academic learning and independent projects.",
 
     achievements: [
       "Ranked among Top 3% of the batch",
-      "Built strong CS fundamentals",
-      "Started competitive programming",
+      "Strong foundation in DSA, OS, DBMS, CN, and OOP",
+      "Solved 200+ data structures and algorithm problems",
+      "Built multiple full-stack and AI-powered applications",
     ],
   },
+
 
   {
     id: 2,
 
-    year: "Dec 2025",
+    year:
+      "Dec 2025 - Jan 2026",
 
-    company: "Enginow",
+    company:
+      "Enginow",
 
-    role: "Full Stack Developer Intern",
+    role:
+      "Full Stack Developer Intern",
 
-    type: "Remote Internship",
+    type:
+      "Internship",
 
-    icon: Building2,
+    icon:
+      Building2,
 
     description:
-      "Worked on production-grade MERN applications, engineered scalable backend services, developed secure REST APIs, implemented authentication, and collaborated on modern software delivery workflows.",
+      "Contributing to full-stack application development by designing user-facing features, developing backend services, implementing secure application workflows, and improving overall product functionality.",
 
     achievements: [
-      "Built scalable backend architecture",
-      "Implemented JWT authentication",
-      "Integrated Stripe payments",
-      "Deployed using Vercel & Render",
+      "Developed production-ready application features",
+      "Built and optimized REST API workflows",
+      "Implemented secure authentication systems",
+      "Collaborated using professional development practices",
     ],
   },
+
 
   {
     id: 3,
 
-    year: "Dec 2025",
+    year:
+      "Dec 2025 - Feb 2026",
 
-    company: "Uptricks Services Pvt. Ltd.",
+    company:
+      "Uptricks Services Pvt. Ltd.",
 
-    role: "Frontend Developer Intern",
+    role:
+      "Frontend Developer Intern",
 
-    type: "Remote Internship",
+    type:
+      "Internship",
 
-    icon: Code2,
+    icon:
+      Code2,
 
     description:
-      "Designed modern responsive user interfaces, built reusable React components, optimized application performance, and collaborated on production-ready frontend systems.",
+      "Working on modern frontend development by creating responsive interfaces, reusable components, and optimized user experiences following industry-standard development practices.",
 
     achievements: [
-      "Reusable UI components",
-      "Responsive web applications",
-      "Performance optimization",
-      "Cross-browser compatibility",
+      "Created reusable UI component systems",
+      "Improved responsiveness across devices",
+      "Optimized frontend performance",
+      "Enhanced application user experience",
     ],
   },
+
 
   {
     id: 4,
 
-    year: "2026",
+    year:
+      "2025 - Present",
 
-    company: "Hackathons & Open Source",
+    company:
+      "Projects, Hackathons & Open Source",
 
-    role: "Competitive Developer",
+    role:
+      "Full Stack & AI Developer",
 
-    type: "Community",
+    type:
+      "Engineering Practice",
 
-    icon: GitBranch,
+    icon:
+      GitBranch,
 
     description:
-      "Expanded beyond coursework by participating in hackathons, contributing to open-source initiatives, and building AI-powered software solutions while collaborating with developers worldwide.",
+      "Building real-world software products, experimenting with AI integrations, participating in development challenges, and continuously improving engineering skills beyond coursework.",
 
     achievements: [
+      "Built production-ready full-stack projects",
+      "Developed AI-powered applications",
       "ET AI Hackathon Semi-Finalist",
-      "Open Source Contributor",
-      "Global Rank 101",
-      "Production-ready AI projects",
+      "Achieved Global Rank 101 in coding challenge",
     ],
   },
+
 
   {
     id: 5,
 
-    year: "Present",
+    year:
+      "Current Focus",
 
-    company: "Career Growth",
+    company:
+      "Software Engineering Preparation",
 
-    role: "Software Engineering Aspirant",
+    role:
+      "Aspiring Software Engineer",
 
-    type: "Current",
+    type:
+      "Growth",
 
-    icon: Sparkles,
+    icon:
+      Sparkles,
 
     description:
-      "Continuously improving system design knowledge, backend architecture, AI engineering, and scalable software development while preparing for software engineering internships at leading technology companies.",
+      "Strengthening software engineering fundamentals, scalable system design concepts, problem-solving skills, and industry-level development practices for professional engineering roles.",
 
     achievements: [
-      "Advanced MERN projects",
-      "AI integrations",
-      "System Design learning",
-      "Interview preparation",
+      "Advanced DSA preparation",
+      "System design fundamentals",
+      "Backend architecture learning",
+      "Building scalable software projects",
     ],
   },
 ];

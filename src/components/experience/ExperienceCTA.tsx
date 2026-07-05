@@ -78,7 +78,7 @@ export default function ExperienceCTA() {
       {/* Description */}
 
       <p className="subheading mt-6 max-w-3xl leading-8">
-        I'm looking forward to joining an engineering team where I can
+        I&apos;m looking forward to joining an engineering team where I can
         contribute to meaningful products, solve challenging problems,
         collaborate with talented developers, and continue growing as a
         software engineer.
@@ -180,7 +180,7 @@ export default function ExperienceCTA() {
           >
             <BriefcaseBusiness size={18} />
 
-            Let's Work Together
+            Let&apos;s Work Together
 
             <ArrowRight size={18} />
           </Link>

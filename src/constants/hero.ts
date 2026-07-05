@@ -13,7 +13,7 @@ export const heroData = {
   name: "Sharad Pal",
 
   roles: [
-    "Full Stack Developer",
+    "Full Stack Ai Developer",
     "AI Engineer",
     "MERN Stack Developer",
     "React Developer",
@@ -41,21 +41,21 @@ export const heroStats: HeroStat[] = [
   },
   {
     id: "dsa",
-    value: 350,
+    value: 200,
     suffix: "+",
     label: "DSA Problems",
     icon: Code2,
   },
   {
     id: "ai",
-    value: 5,
+    value: 3,
     suffix: "+",
     label: "AI Projects",
     icon: BrainCircuit,
   },
   {
     id: "hackathons",
-    value: 3,
+    value: 4,
     suffix: "+",
     label: "Hackathons",
     icon: Trophy,

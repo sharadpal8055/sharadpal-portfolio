@@ -21,15 +21,12 @@ const containerVariants = {
 
 export default function Skills() {
   return (
-    <section
-      id="skills"
-      className="section-padding relative overflow-hidden"
-    >
+    <section id="skills" className="section-padding relative overflow-hidden">
       <SkillsBackground />
 
       <motion.div
         variants={containerVariants}
-        initial="hidden"
+        initial="show"
         whileInView="show"
         viewport={{
           once: true,
