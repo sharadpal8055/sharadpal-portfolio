@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { siteConfig } from "@/constants/seo";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Toaster } from "react-hot-toast";
+import { Analytics } from "@vercel/analytics/next";
 import {
   Inter
 } from "next/font/google";
@@ -115,6 +116,7 @@ export default function RootLayout({
     >
       <body className="flex min-h-full flex-col">
         {children}
+        <Analytics />
         <Toaster position="top-center" />
       </body>
     </html>
