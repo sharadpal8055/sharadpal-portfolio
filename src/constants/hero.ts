@@ -41,7 +41,7 @@ export const heroStats: HeroStat[] = [
   },
   {
     id: "dsa",
-    value: 200,
+    value: 250,
     suffix: "+",
     label: "DSA Problems",
     icon: Code2,

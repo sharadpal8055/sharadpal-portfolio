@@ -92,7 +92,7 @@ export const skillsStats = [
 
   {
     id: 4,
-    value: 200,
+    value: 250,
     suffix: "+",
     label: "DSA Problems",
     icon: BrainCircuit,
@@ -278,7 +278,7 @@ export const skillCategories = [
 
     icon: Braces,
     experience: "Advanced",
-    projects: "200+ DSA",
+    projects: "250+ DSA",
 
     technologies: [
       {

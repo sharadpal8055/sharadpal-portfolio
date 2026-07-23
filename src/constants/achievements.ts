@@ -40,7 +40,7 @@ export const achievementStats = [
   {
     id: 1,
 
-    value: "200+",
+    value: "250+",
 
     label: "DSA Problems Solved",
 
