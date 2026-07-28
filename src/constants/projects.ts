@@ -189,7 +189,7 @@ export const projects = [
       "https://github.com/sharadpal8055/ElearningFrontend",
 
     live:
-      "https://elearningfrontend-alpha.vercel.app",
+      "https://future-nest-jet.vercel.app/dashboard",
   },
 
 
